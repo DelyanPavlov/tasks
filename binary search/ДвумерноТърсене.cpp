@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 using namespace std;
 
 int main()
@@ -20,21 +20,21 @@ int main()
     {
         cin >> n;
          mid = n;
-         num = 0 + n;
+         num = 0;
     }
 
     cout << num <<endl;
     while(true)
     {
         cin >> inp;
-        n = (n + 2 - 1) / 2;
+        mid = (mid + 2 - 1) / 2;
         switch (inp)
         {
         case'u':
-            num += n;
+            num += mid;
             break;
         case'd':
-            num -= n;
+            num -= mid;
             break;
         }
             if (inp == 'y')
